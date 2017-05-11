@@ -43,3 +43,19 @@ try{
 	exit;
 }
 ```
+
+数组两两排列组合
+```
+<?php
+
+$arr = [1, 2, 3, 4];
+
+for ($i = 1; $i <= count($arr); $i++) {
+    for ($j = $i + 1; $j <= count($arr); $j++) {
+        $tmp[] = $i . ':' . $j;
+    }
+}
+
+echo '<pre>';
+print_r($tmp);
+```
